@@ -32,7 +32,8 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.pdf).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                printPdf();
+//                printPdf();
+                send();
             }
         });
 
@@ -145,5 +146,12 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, "pdf附件不存在！", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    private void send() {
+//        MailManager.getInstance().sendMail("title", "content");
+//        String path = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "fade.amr";
+        String path = "/storage/emulated/0/1/aletter.pdf";
+        MailManager.getInstance().sendMailWithFile("", "", path);
     }
 }
