@@ -1,11 +1,11 @@
 package com.like.hpprintdemo;
 
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Toast;
 
 import com.hp.mss.hpprint.model.ImagePrintItem;
 import com.hp.mss.hpprint.model.PrintItem;
@@ -42,21 +42,6 @@ public class MainActivity extends AppCompatActivity {
                 printPdfByEmail();
             }
         });
-
-        //        PDFView view = (PDFView) findViewById(R.id.v_test);
-        //        PDFView
-        //        PDFView pdfView= (PDFView) lookContent.findViewById(R.id.pdfview);
-        //        view.fromAsset("aletter.pdf")
-        //                    .pages(0)
-        //                    .defaultPage(0)
-        //                    .showMinimap(true)
-        //                    .enableSwipe(true)
-        // .onDraw(onDrawListener)
-        // .onLoad(onLoadCompleteListener)
-        // .onPageChange(onPageChangeListener)
-        //                        .load();
-        //
-        //        view.zoomTo(2f);
     }
 
     /**
@@ -100,72 +85,65 @@ public class MainActivity extends AppCompatActivity {
         //        PrintUtil.print(MainActivity.this);
 
 
-        //        Intent printIntent = new Intent("org.androidprinting.intent.action.SEND");
-        //        startActivity(printIntent);
+        File file = new File("/storage/emulated/0/1/aletter.pdf");
+        if (file.exists()) {
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.addCategory("android.intent.category.DEFAULT");
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            Uri uri = Uri.fromFile(file);
+            intent.setDataAndType(uri, "application/pdf");
 
-        //        Uri uri = Uri.fromFile(new File(Environment.getExternalStorageDirectory(), "1/aletter.pdf"));
-        //        Intent intent = new Intent ("org.androidprinting.intent.action.PRINT");
-        //        intent.setDataAndType( uri, "text/plain" );
-        //        startActivityForResult(intent, 0);
+            /**
+             * 用指定应用打开pdf文件
+             * "包名"，"活动名"
+             */
+            intent.setClassName("com.microsoft.office.word", "com.microsoft.office.apphost.LaunchActivity");
 
-        //        Intent intent = new Intent();
-        //        intent.setAction(Intent.ACTION_VIEW);
-        //        Uri uri = Uri.fromFile(new File(Environment.getExternalStorageDirectory(), "1/aletter.pdf"));
-        //        intent.setDataAndType(uri, "image/*");
-        //        startActivity(intent);
-
-        //        Intent intent = new Intent("com.hp.android.print.PRINT");
-        //        intent.setPackage("com.hp.android.print");
-        //        startActivityForResult(intent, 0);
-
-        //        File file =  new File("/storage/emulated/0/1/aletter.pdf");
-        //        if(file.exists()){
-        //            Intent intent = new Intent("com.microsoft.office.apphost.LaunchActivity");
-        //            intent.addCategory("android.intent.category.DEFAULT");
-        //            intent.addFlags (Intent.FLAG_ACTIVITY_NEW_TASK);
-        //            Uri uri = Uri.fromFile(file);
-        //            intent.setDataAndType (uri, "application/pdf");
-        //            try{
-        //                this.startActivity(intent);
-        ////                this.startActivity(Intent.createChooser(intent, "Choose Email Client"));
-        //            }catch (Exception e){
-        //                Toast.makeText(this, "设备上没有可浏览pdf文件的应用！", Toast.LENGTH_SHORT).show();
-        //            }
-        //        }else {
-        //            Toast.makeText(this, "pdf文件不存在！", Toast.LENGTH_SHORT).show();
-        //        }
-
-        //打开word应用
-//        Intent intent = new Intent("com.microsoft.office.apphost.LaunchActivity");
-//        intent.addCategory("android.intent.category.DEFAULT");
-//        File file = new File("/storage/emulated/0/1/aletter.pdf");
-//        Uri uri = Uri.fromFile(file);
-//        intent.setDataAndType(uri, "application/pdf");
-//        startActivity(intent);
+            try {
+                this.startActivity(intent);
+                //                this.startActivity(Intent.createChooser(intent, "Choose Email Client"));
+            } catch (Exception e) {
+                Toast.makeText(this, "设备上没有可浏览pdf文件的应用Microsoft Word！", Toast.LENGTH_SHORT).show();
+            }
+        } else {
+            Toast.makeText(this, "pdf文件不存在！", Toast.LENGTH_SHORT).show();
+        }
 
         // 获取包管理器  
-                File file =  new File("/storage/emulated/0/1/aletter.doc");
-                PackageManager pm = getPackageManager();
-                Intent intent = pm.getLaunchIntentForPackage("com.microsoft.office.word");
-                Uri uri = Uri.fromFile(file);
-                intent.setDataAndType(uri, "application/vnd.openxmlformats-officedocument.wordprocessingml.document");
-        //
-                startActivity(intent);
+        //                File file =  new File("/storage/emulated/0/1/aletter.doc");
+        //                PackageManager pm = getPackageManager();
+        //                Intent intent = pm.getLaunchIntentForPackage("com.microsoft.office.word");
+        //                Uri uri = Uri.fromFile(file);
+        //                intent.setDataAndType(uri, "application/vnd.openxmlformats-officedocument.wordprocessingml.document");
+        //                intent.setClassName(packageName, className);
+        //        //
+        //                startActivity(intent);
 
     }
 
     public void printPdfByEmail() {
 
-        Intent i = new Intent(Intent.ACTION_SEND);
-        // i.setType("text/plain"); //模拟器请使用这行
-        i.setType("message/rfc822"); // 真机上使用这行
-        //        i.putExtra(Intent.EXTRA_EMAIL,
-        //                new String[] { "wuyunpeng@aegis-data.cn" });
-        i.putExtra(Intent.EXTRA_EMAIL,
-                new String[]{"fxr23mf47@hpeprint.com"});
-        //        i.putExtra(Intent.EXTRA_SUBJECT, "邮件测试");
-        //        i.putExtra(Intent.EXTRA_TEXT, "这是一封打印机测试邮件！");
-        i.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File("/storage/emulated/0/1/aletter.pdf")));
-        startActivity(Intent.createChooser(i, "Select email application."));
+        File file = new File("/storage/emulated/0/1/aletter.pdf");
+        if (file.exists()) {
+            Intent intent = new Intent(Intent.ACTION_SEND);
+            // i.setType("text/plain"); //模拟器请使用这行
+            intent.setType("message/rfc822"); // 真机上使用这行
+            //        i.putExtra(Intent.EXTRA_EMAIL,
+            //                new String[] { "wuyunpeng@aegis-data.cn" });
+            intent.putExtra(Intent.EXTRA_EMAIL,
+                    new String[]{"fxr23mf47@hpeprint.com"});
+//                    intent.putExtra(Intent.EXTRA_SUBJECT, "主题");//主题
+            //        i.putExtra(Intent.EXTRA_TEXT, "这是一封打印机测试邮件的正文！");//正文
+            intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(file));//附件
+//            intent.setClassName("com.tencent.androidqqmail","com.tencent.qqmail.fragment.base.MailFragmentActivity");
+            try{
+//                startActivity(Intent.createChooser(intent, "Select email application."));
+                startActivity(intent);
+            }catch (Exception e){
+                Toast.makeText(this, "设备上没有发送邮件的应用QQ邮箱！", Toast.LENGTH_SHORT).show();
+            }
+        } else {
+            Toast.makeText(this, "pdf附件不存在！", Toast.LENGTH_SHORT).show();
+        }
     }
 }
