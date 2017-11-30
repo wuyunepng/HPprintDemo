@@ -22,33 +22,39 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        findViewById(R.id.image).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.imageByJar).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                printImage();
+                printImageByJar();
             }
         });
 
-        findViewById(R.id.pdf).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.pdfByWord).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                printPdf();
-                send();
+                printPdfByWord();
             }
         });
 
-        findViewById(R.id.email).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.pdfByQQEmail).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                printPdfByEmail();
+                printPdfByQQEmail();
+            }
+        });
+
+        findViewById(R.id.pdfBy163Email).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                printBy163Email();
             }
         });
     }
 
     /**
-     * print image
+     * print imageByJar
      */
-    public void printImage() {
+    public void printImageByJar() {
 
         //1.To load an ImageAsset from resources:
         //        ImageAsset imageAsset4x6 = new ImageAsset(this, R.drawable.template4x6, ImageAsset.MeasurementUnits.INCHES, 4, 6);
@@ -68,9 +74,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * print pdf
+     * print pdfByWord
      */
-    public void printPdf() {
+    public void printPdfByWord() {
 
         //1.To load a PDFAsset from the assets folder:
         //        PDFAsset pdfAsset4x6 = new PDFAsset("4x6.pdf", true);
@@ -122,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void printPdfByEmail() {
+    public void printPdfByQQEmail() {
 
         File file = new File("/storage/emulated/0/1/aletter.pdf");
         if (file.exists()) {
@@ -148,10 +154,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void send() {
+    private void printBy163Email() {
 //        MailManager.getInstance().sendMail("title", "content");
 //        String path = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "fade.amr";
-        String path = "/storage/emulated/0/1/aletter.pdf";
+        String path = "/storage/emulated/0/1/aletter.pdf";//文件路径
         MailManager.getInstance().sendMailWithFile("", "", path);
     }
 }

@@ -102,8 +102,8 @@ public class MailManager {
         MimeMessage mimeMessage = new MimeMessage(session);
         try {
             mimeMessage.setFrom(new InternetAddress(SENDER_NAME));
-//            InternetAddress[] addresses = new InternetAddress[]{new InternetAddress(RECIVER_NAME)};
-            InternetAddress[] addresses = new InternetAddress[]{new InternetAddress(SENDER_NAME)};
+//            InternetAddress[] addresses = new InternetAddress[]{new InternetAddress(RECIVER_NAME)};//发给打印机
+            InternetAddress[] addresses = new InternetAddress[]{new InternetAddress(SENDER_NAME)};//发给自己
             mimeMessage.setRecipients(Message.RecipientType.TO, addresses);
             mimeMessage.setSubject(title);
             MimeBodyPart textPart = new MimeBodyPart();
