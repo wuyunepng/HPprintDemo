@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Hewlett-Packard Company
+  ~ All rights reserved.
+  ~
+  ~ This file, its contents, concepts, methods, behavior, and operation
+  ~ (collectively the "Software") are protected by trade secret, patent,
+  ~ and copyright laws. The use of the Software is governed by a license
+  ~ agreement. Disclosure of the Software to third parties, in any form,
+  ~ in whole or in part, is expressly prohibited except as authorized by
+  ~ the license agreement.
+  -->
+
+<resources>
+    <style name="PreviewTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/AppCompatActionBar</item>
+        <item name="actionBarStyle">@style/AppCompatActionBar</item>
+        <item name="android:spinnerItemStyle">@style/previewSpinnerText</item>
+    </style>
+
+    <style name="PrintHelp" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/AppCompatActionBar</item>
+        <item name="actionBarStyle">@style/AppCompatActionBar</item>
+    </style>
+
+    <style name="PrintServicePluginInformationTheme" parent="@style/Theme.AppCompat">
+        <item name="android:actionBarStyle">@style/AppCompatActionBar</item>
+        <item name="actionBarStyle">@style/AppCompatActionBar</item>
+    </style>
+
+    <style name="AppCompatActionBar"
+        parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@color/PluginToolbarBKColor</item>
+        <item name="titleTextStyle">@style/AppCompatActionBarTextStyle</item>
+    </style>
+
+    <style name="AppCompatActionBarTextStyle"
+        parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="pagePreviewView">
+        <item name="sizeFontColor">@android:color/black</item>
+    </style>
+
+    <style name="printServicePluginInformationStyle">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="previewSpinnerText">
+        <item name="android:textSize">17sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="previewSpinner" parent="@style/Widget.AppCompat.Spinner">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="previewSpinnerBG">
+        <item name="android:background">@color/PluginToolbarBKColor</item>
+    </style>
+
+    <style name="previewBackGround">
+        <item name="android:background">@color/HPLightGreyBackground</item>
+    </style>
+
+    <style name="previewPaperSizeSpinnerText">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="previewSupportText"></style>
+
+
+    <style name="PluginManagerToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">19sp</item>
+    </style>
+</resources>

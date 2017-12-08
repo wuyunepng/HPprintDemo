@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Hewlett-Packard Company
+  ~ All rights reserved.
+  ~
+  ~ This file, its contents, concepts, methods, behavior, and operation
+  ~ (collectively the "Software") are protected by trade secret, patent,
+  ~ and copyright laws. The use of the Software is governed by a license
+  ~ agreement. Disclosure of the Software to third parties, in any form,
+  ~ in whole or in part, is expressly prohibited except as authorized by
+  ~ the license agreement.
+  -->
+
+<resources>
+    <color name="HPFontColorDarkGrey">#3A3A3A</color>
+    <color name="HPFontColorBlue">#0096D9</color>
+    <color name="HPFontColorWhite">#FFFFFF</color>
+    <color name="HPFontColorDarkBlue">#007eba</color>
+    <color name="HPLightGreyBackground">#EFEFF4</color>
+    <color name="HPFontColorCarbonGrey">#333333</color>
+    <color name="HPFontColorGrey">#8F8F95</color>
+    <color name="HPFontColorLightGrey">#61E3E3EC</color>
+    <color name="PrintPreviewBG">#2c363c</color>
+
+    <color name="PluginMGDividerColor">#9B9B9B</color>
+    <color name="PluginBtnColorBlue">#00849D</color>
+    <color name="PluginToolbarBKColor">#00A5C4</color>
+    <color name="PluginSubTitleBKColorGrey">#F2F1F2</color>
+    <color name="PluginFontColorBlack">#000000</color>
+    <color name="PluginNameFontColor">#333333</color>
+    <color name="PluginMakerFontColor">#959595</color>
+    <color name="PluginListViewDividerColor">#FFEFEEEE</color>
+</resources>

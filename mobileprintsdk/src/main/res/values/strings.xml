@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Hewlett-Packard Company
+  ~ All rights reserved.
+  ~
+  ~ This file, its contents, concepts, methods, behavior, and operation
+  ~ (collectively the "Software") are protected by trade secret, patent,
+  ~ and copyright laws. The use of the Software is governed by a license
+  ~ agreement. Disclosure of the Software to third parties, in any form,
+  ~ in whole or in part, is expressly prohibited except as authorized by
+  ~ the license agreement.
+  -->
+
+<resources>
+
+    <string name="title_activity_print_preview">Print Preview</string>
+    <string name="title_activity_print_place_holder">Print</string>
+    <string name="action_settings">Settings</string>
+    <string name="print_preview_prompt">Imagine a super duper image appears below</string>
+    <string name="learn_about_mobile_print">Print Instructions</string>
+    <string name="support">Support:</string>
+    <string name="paper_size">Paper Size:</string>
+    <string name="paper_type">Paper Type</string>
+    <string name="lib_font"></string>
+
+    <string name="preview_spinner_4x5">4 x 5</string>
+    <string name="preview_spinner_4x6">4 x 6</string>
+    <string name="preview_spinner_5x7">5 x 7</string>
+    <string name="preview_spinner_letter">8.5 x 11</string>
+
+    <string-array name="paper_type_array">
+        <item> Photo Paper </item>
+    </string-array>
+    <!-- Print Preview -->
+    <string name="print_preview_menu_help">Print Help</string>
+    <string name="print_preview_menu_print_service_plugins">Print Service Plugins</string>
+
+    <!-- Print Plugin installation -->
+    <string name="hp_print_plugin_alert_header">HP Print Plugin</string>
+    <string name="install_hp_print_plugin_msg">Do you have an HP printer? To print the best quality photos, please install HP Print Plugin.</string>
+    <string name="update_hp_print_plugin_msg">Do you have an HP printer? To print the best quality photos, please update HP Print Plugin.</string>
+    <string name="enable_hp_print_plugin_msg">Ensure your HP Print Plugin is enabled.</string>
+
+    <!-- Print Plugin helper -->
+    <string name="hp_print_helper_header">Print Service Helper</string>
+    <string name="install_print_plugin_msg">To print the best quality photos, please install and enable the proper plugin for your printer.</string>
+
+    <!-- Print Service Plugin Information -->
+    <string name="title_activity_print_service_plugin_info">Print Service Information</string>
+    <string name="print_service_help_title_1">Get a Print Service Plugin</string>
+    <string name="print_service_help_msg_1">You must have a print service plugin installed to print. Each brand of printer has their own plugin that enables you to print from your mobile device. Generic print service plugins are also available. Select the plugin that serves you best. You can add additional print plugins anytime.</string>
+    <string name="print_service_help_title_2">Enable Plugin</string>
+    <string name="print_service_help_msg_2">After downloading a Print Service Plugin, you will be prompted to enable your plugin. Just select it and tap the switch to “ON”.</string>
+
+    <!-- Print Help -->
+    <string name="title_activity_print_help">Print Help</string>
+    <string name="print_help_activity_title_1">Ensure your Print Service Plugin is installed and enabled</string>
+    <string name="print_help_activity_msg_1_part_1">You must have a print service plugin installed and enabled to print. Each brand of printer has their own plugin that enables you to print from your mobile device. Generic print service plugins are also available. Select the plugin that serves you best. You can add additional print plugins anytime.</string>
+    <string name="print_help_activity_msg_1_part_2">After downloading a Print Service Plugin, you will be prompted to enable your plugin. Just select it and tap the switch to “ON”.</string>
+    <string name="print_help_activity_msg_1_link">Check your Print Service Plugins</string>
+    <string name="print_help_activity_title_2">Ensure your mobile device and printer are connected to the same network</string>
+    <string name="print_help_activity_msg_2">Your mobile device and printer must be connected to your local Wi-Fi network. Review both of your device’s Wi-Fi information and follow instructions to connect.</string>
+    <string name="print_help_activity_title_3">Check your printer for any error messages or power issues</string>
+    <string name="print_help_activity_msg_3">Some common printer issues are low ink, a paper jam, and paper not loaded. Additionally check to ensure there is power to the printer.</string>
+
+
+    <!-- Snap Shots Prompt -->
+    <string name="snap_shots_prompt_header">Printing on 4x5 Paper</string>
+    <string name="snap_shots_prompt_ok">CONTINUE</string>
+    <string name="snap_shots_prompt_do_not_show">Do not show again.</string>
+    <string name="snap_shots_prompt_message">You have selected 4x5 as your paper size. The next screen will show 4x6, but don\'t worry, it will print correctly.</string>
+
+    <!-- Print Plugin Manager -->
+    <string name="plugin_manager_title">Print Service Manager</string>
+    <string name="plugin_manager_sub_title">You need a Print Service Plugin installed &amp; enabled to print.</string>
+
+    <string-array name="plugin_names">
+        <item>HP Print Service Plugin</item>
+        <item>Mopria Print Service</item>
+        <item>Brother Print Service Plugin</item>
+        <item>Samsung Print Service Plugin</item>
+        <item>Canon Print Service</item>
+        <item>Epson Print Enabler</item>
+        <item>Other PrintServicePlugin</item>
+    </string-array>
+
+    <string-array name="plugin_makers">
+        <item>HP Inc.</item>
+        <item>Mopria Alliance</item>
+        <item>Brother Industries, Ltd.</item>
+        <item>Samsung Electronics Co., Ltd.</item>
+        <item>Canon Inc.</item>
+        <item>Seiko Epson Corporation</item>
+         <item>N/A</item>
+    </string-array>
+
+    <string name="continue_to_print">CONTINUE TO PRINT</string>
+    <string name="skip">SKIP</string>
+    <string name="before_enable_tips">You will be directed to the Android Print Settings.</string>
+    <string name="before_enable_tips_title">Enable your Plugin</string>
+    <string name="ok">GO TO SETTINGS</string>
+    <string name="cancel">CANCEL</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+
+    <!--Toast Strings-->
+    <string name="set_print_job_data">Please set PrintJobData first</string>
+</resources>

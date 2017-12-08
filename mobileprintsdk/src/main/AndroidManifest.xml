@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Hewlett-Packard Company
+  ~ All rights reserved.
+  ~
+  ~ This file, its contents, concepts, methods, behavior, and operation
+  ~ (collectively the "Software") are protected by trade secret, patent,
+  ~ and copyright laws. The use of the Software is governed by a license
+  ~ agreement. Disclosure of the Software to third parties, in any form,
+  ~ in whole or in part, is expressly prohibited except as authorized by
+  ~ the license agreement.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hp.mss.hpprint">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <receiver android:name=".MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.PACKAGE_INSTALL" />
+            <action android:name="android.intent.action.PACKAGE_ADDED" />
+            <data android:scheme="package"/>
+        </intent-filter>
+    </receiver>
+
+    <application android:allowBackup="true">
+        <activity
+            android:name=".activity.PrintPreview"
+            android:label="@string/title_activity_print_preview"
+            android:launchMode="singleTop"
+            android:theme="@style/PreviewTheme">
+        </activity>
+        <activity
+            android:name=".activity.PrintHelp"
+            android:label="@string/title_activity_print_help"
+            android:launchMode="singleTop"
+            android:theme="@style/PrintHelp">
+        </activity>
+        <activity
+            android:name=".activity.PrintPluginManagerActivity"
+            android:label="@string/plugin_manager_title"
+            android:theme="@style/PrintServicePluginInformationTheme">
+        </activity>
+        <activity
+            android:name="com.hp.mss.hpprint.activity.PrintServicePluginInformation"
+            android:label="@string/title_activity_print_service_plugin_info"
+            android:theme="@style/PrintServicePluginInformationTheme"
+            android:launchMode="singleTop">
+        </activity>
+    </application>
+
+</manifest>

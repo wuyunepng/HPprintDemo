@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Hewlett-Packard Company
+  ~ All rights reserved.
+  ~
+  ~ This file, its contents, concepts, methods, behavior, and operation
+  ~ (collectively the "Software") are protected by trade secret, patent,
+  ~ and copyright laws. The use of the Software is governed by a license
+  ~ agreement. Disclosure of the Software to third parties, in any form,
+  ~ in whole or in part, is expressly prohibited except as authorized by
+  ~ the license agreement.
+  -->
+
+<resources>
+  <string name="title_activity_print_preview">Aperçu avant impression</string>
+  <string name="title_activity_print_place_holder">Imprimer</string>
+  <string name="action_settings">Paramètres</string>
+  <string name="print_preview_prompt">Imaginez qu\'une image géniale apparaît ci-dessous</string>
+  <string name="learn_about_mobile_print">Instructions d\'impression</string>
+  <string name="support">Assistance :</string>
+  <string name="paper_size">Format du papier</string>
+  <string name="paper_type">Type de papier</string>
+  <string name="lib_font"/>
+
+  <string name="preview_spinner_4x5"> 10x13cm </string>
+  <string name="preview_spinner_4x6"> 10x15cm </string>
+  <string name="preview_spinner_5x7"> 13x18cm </string>
+  <string name="preview_spinner_letter"> 21,59x27,94cm </string>
+
+    <string-array name="paper_type_array">
+    <item>Papier photo</item>
+  </string-array>
+
+    <!-- Print Preview -->
+    <string name="print_preview_menu_help">Aide relative à l\'impression</string>
+    <string name="print_preview_menu_print_service_plugins">Modules d\'extension du service d\'impression</string>
+
+  <!-- Print Plugin installation -->
+  <string name="hp_print_plugin_alert_header">Module d\'extension du service d\'impression HP</string>
+  <string name="install_hp_print_plugin_msg">Possédez-vous une imprimante HP&#x00a0;? Pour imprimer des photos de la meilleure qualité possible, installez le module d\'extension du service d\'impression HP.</string>
+  <string name="update_hp_print_plugin_msg">Possédez-vous une imprimante HP&#x00a0;? Pour imprimer des photos de la meilleure qualité possible, mettez à jour le module d\'extension du service d\'impression HP.</string>
+  <string name="enable_hp_print_plugin_msg">Assurez-vous que le module d\'extension du service d\'impression HP est activé.</string>
+
+    <!-- Print Plugin helper -->
+  <string name="hp_print_helper_header">Aide du service d\'impression</string>
+  <string name="install_print_plugin_msg">Pour imprimer des photos de la meilleure qualité possible, installez et activez le module d\'extension dédié à votre imprimante.</string>
+
+    <!-- Print Service Plugin Information -->
+    <string name="title_activity_print_service_plugin_info">Informations sur le service d\'impression</string>
+    <string name="print_service_help_title_1">Procurez-vous un module d\'extension du service d\'impression</string>
+    <string name="print_service_help_msg_1">Vous devez installer un module d\'extension du service d\'impression pour pouvoir imprimer. Toutes les marques d\'imprimantes proposent un module d\'extension qui vous permet d\'imprimer depuis votre appareil mobile. Des modules d\'extension génériques sont également disponibles. Sélectionnez le module le plus adapté. Vous pouvez ajouter des modules d\'extension supplémentaires à tout moment.</string>
+    <string name="print_service_help_title_2">Activez le module d\'extension</string>
+    <string name="print_service_help_msg_2">Après avoir téléchargé un module d\'extension du service d\'impression, vous serez invité(e) à l\'activer. Il vous suffit de le sélectionner et d\'appuyer sur le bouton pour le basculer sur « Activé ».</string>
+
+    <!-- Print Help -->
+    <string name="title_activity_print_help">Aide relative à l\'impression</string>
+    <string name="print_help_activity_title_1">Assurez-vous que le module d\'extension du service d\'impression est installé et activé</string>
+    <string name="print_help_activity_msg_1_part_1">Vous devez installer et activer un module d\'extension du service d\'impression pour pouvoir imprimer. Toutes les marques d\'imprimantes proposent un module d\'extension qui vous permet d\'imprimer depuis votre appareil mobile. Des modules d\'extension génériques sont également disponibles. Sélectionnez le module le plus adapté. Vous pouvez ajouter des modules d\'extension supplémentaires à tout moment.</string>
+    <string name="print_help_activity_msg_1_part_2">Après avoir téléchargé un module d\'extension du service d\'impression, vous serez invité(e) à l\'activer. Il vous suffit de le sélectionner et d\'appuyer sur le bouton pour le basculer sur « Activé ».</string>
+    <string name="print_help_activity_msg_1_link">Contrôlez vos modules d\'extension du service d\'impression</string>
+    <string name="print_help_activity_title_2">Assurez-vous que l\'appareil mobile et l\'imprimante sont connectés au même réseau</string>
+    <string name="print_help_activity_msg_2">L\'appareil mobile et l\'imprimante doivent être connectés à votre réseau Wifi local. Consultez les informations relatives à la connexion Wi-Fi de vos deux appareils et suivez la procédure de connexion.</string>
+    <string name="print_help_activity_title_3">Contrôlez votre imprimante en cas de message d\'erreur ou de problème d\'alimentation</string>
+    <string name="print_help_activity_msg_3">Problèmes communs liés aux imprimantes : niveau d\'encre trop bas, bourrage papier, absence de papier dans le bac d\'alimentation. Vérifiez également que l\'imprimante est sous tension.</string>
+
+
+    <!-- Snap Shots Prompt -->
+    <string name="snap_shots_prompt_header">Impression sur du papier 10x13cm (4x5")</string>
+    <string name="snap_shots_prompt_ok">CONTINUER</string>
+    <string name="snap_shots_prompt_do_not_show">Ne plus afficher ce message.</string>
+    <string name="snap_shots_prompt_message">Vous avez sélectionné le format de papier 10x13cm (4x5"). L\'écran suivant va afficher 10x15cm (4x6”). Ne vous inquiétez pas, votre document s\'imprimera correctement.</string>
+
+    <!-- Print Plugin Manager -->
+    <string name="plugin_manager_title">Gestionnaire du service d\'impression</string>
+    <string name="plugin_manager_sub_title">Vous devez installer et activer un module d\'extension du service d\'impression pour pouvoir imprimer.</string>
+
+    <string-array name="plugin_names">
+        <item>Module d\'extension du service d’impression HP</item>
+        <item>Service d\'impression Mopria</item>
+        <item>Module d\'extension du service d’impression Brother</item>
+        <item>Module d\'extension du service d’impression Samsung</item>
+        <item>Service d\'impression Canon</item>
+        <item>Activateur d\'impression Epson</item>
+        <item>Autres modules d\'extension du service d\'impression</item>
+    </string-array>
+
+    <string-array name="plugin_makers">
+        <item>HP Inc.</item>
+        <item>Mopria Alliance</item>
+        <item>Brother Industries, Ltd.</item>
+        <item>Samsung Electronics Co., Ltd.</item>
+        <item>Canon Inc.</item>
+        <item>Seiko Epson Corporation</item>
+        <item>S/O</item>
+    </string-array>
+
+    <string name="continue_to_print">CONTINUER L\'IMPRESSION</string>
+    <string name="skip">IGNORER</string>
+    <string name="before_enable_tips">Vous allez être redirigé(e) vers les paramètres d\'impression Android.</string>
+    <string name="before_enable_tips_title">Activez votre module d\'extension</string>
+    <string name="ok">ACCÉDER AUX PARAMÈTRES</string>
+    <string name="cancel">ANNULER</string>
+    <string name="enabled">Activé</string>
+    <string name="disabled">Désactivé</string>
+
+  <!--Toast Strings-->
+  <string name="set_print_job_data">Commencez par choisir les données à imprimer</string>
+</resources>

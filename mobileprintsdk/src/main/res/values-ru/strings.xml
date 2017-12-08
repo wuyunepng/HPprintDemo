@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Hewlett-Packard Company
+  ~ All rights reserved.
+  ~
+  ~ This file, its contents, concepts, methods, behavior, and operation
+  ~ (collectively the "Software") are protected by trade secret, patent,
+  ~ and copyright laws. The use of the Software is governed by a license
+  ~ agreement. Disclosure of the Software to third parties, in any form,
+  ~ in whole or in part, is expressly prohibited except as authorized by
+  ~ the license agreement.
+  -->
+
+<resources>
+  <string name="title_activity_print_preview">Предварительный просмотр печати</string>
+  <string name="title_activity_print_place_holder">Печать</string>
+  <string name="action_settings">Параметры</string>
+  <string name="print_preview_prompt">Представьте, что дальше появляется фантастическое изображение</string>
+  <string name="learn_about_mobile_print">Инструкции для печати</string>
+  <string name="support">Поддержка:</string>
+  <string name="paper_size">Размер бумаги</string>
+  <string name="paper_type">Тип бумаги</string>
+  <string name="lib_font"/>
+
+  <string name="preview_spinner_4x5"> 10x13cm </string>
+  <string name="preview_spinner_4x6"> 10x15cm </string>
+  <string name="preview_spinner_5x7"> 13x18cm </string>
+  <string name="preview_spinner_letter"> 21,59x27,94cm </string>
+
+  <string-array name="paper_type_array">
+    <item>Фотобумага</item>
+  </string-array>
+
+    <!-- Print Preview -->
+    <string name="print_preview_menu_help">Печать справки</string>
+    <string name="print_preview_menu_print_service_plugins">Подключаемые модули услуг печати</string>
+
+    <!-- Print Plugin installation -->
+  <string name="hp_print_plugin_alert_header">Подключаемый модуль HP Print</string>
+  <string name="install_hp_print_plugin_msg">У вас есть принтер HP? Чтобы добиться максимально высокого качества печати фотографий, установите подключаемый модуль HP Print.</string>
+  <string name="update_hp_print_plugin_msg">У вас есть принтер HP? Чтобы добиться максимально высокого качества печати фотографий, обновите подключаемый модуль HP Print.</string>
+  <string name="enable_hp_print_plugin_msg">Убедитесь в том, что подключаемый модуль HP Print активирован.</string>
+
+    <!-- Print Plugin helper -->
+  <string name="hp_print_helper_header">Помощник службы печати</string>
+  <string name="install_print_plugin_msg">Чтобы добиться максимально высокого качества фотографий, установите и активируйте соответствующий подключаемый модуль для своего принтера.</string>
+
+  <!-- Print Service Plugin Information -->
+  <string name="title_activity_print_service_plugin_info">Информация об услугах печати</string>
+  <string name="print_service_help_title_1">Получить подключаемый модуль услуг печати</string>
+  <string name="print_service_help_msg_1">Для печати необходимо установить подключаемый модуль услуг печати. Для каждой марки принтера существует свой подключаемый модуль, который позволит выполнить печать с вашего мобильного устройства. Доступны также универсальные подключаемые модули услуг печати. Выберите наиболее подходящий подключаемый модуль. Дополнительные подключаемые модули печати можно добавить в любое время.</string>
+  <string name="print_service_help_title_2">Включить подключаемый модуль</string>
+  <string name="print_service_help_msg_2">После загрузки подключаемого модуля услуг печати будет предложено включить его. Просто выберите его и переведите переключатель в положение “ВКЛ”.</string>
+
+  <!-- Print Help -->
+  <string name="title_activity_print_help">Справка по печати</string>
+  <string name="print_help_activity_title_1">Убедитесь, что подключаемый модуль услуг печати установлен и включен</string>
+  <string name="print_help_activity_msg_1_part_1">Для печати необходимо установить подключаемый модуль услуг печати и включить его. Для каждой марки принтера существует свой подключаемый модуль, который позволит выполнить печать с вашего мобильного устройства. Доступны также универсальные подключаемые модули услуг печати. Выберите наиболее подходящий подключаемый модуль. Дополнительные подключаемые модули печати можно добавить в любое время.</string>
+  <string name="print_help_activity_msg_1_part_2">После загрузки подключаемого модуля услуг печати будет предложено включить его. Просто выберите его и переведите переключатель в положение “ВКЛ”.</string>
+  <string name="print_help_activity_msg_1_link">Проверьте подключаемые модули услуг печати</string>
+  <string name="print_help_activity_title_2">Убедитесь, что мобильное устройство и принтер подключены к одной сети.</string>
+  <string name="print_help_activity_msg_2">Мобильное устройство и принтер должны быть подключены к локальной сети Wi-Fi. Проверьте параметры Wi-Fi на обоих устройствах и следуйте инструкциям для подключения.</string>
+  <string name="print_help_activity_title_3">Проверьте принтер на наличие сообщений об ошибках или проблем с питанием.</string>
+  <string name="print_help_activity_msg_3">Наиболее распространенными проблемами принтеров являются низкий уровень чернил, замятие бумаги или ее отсутствие. Также проверьте питание принтера.</string>
+
+
+  <!-- Snap Shots Prompt -->
+  <string name="snap_shots_prompt_header">Печать на бумаге 10x13cm (4x5")</string>
+  <string name="snap_shots_prompt_ok">ПРОДОЛЖИТЬ</string>
+  <string name="snap_shots_prompt_do_not_show">Больше не показывать это сообщение.</string>
+  <string name="snap_shots_prompt_message">Выбран размер бумаги 10x13cm (4x5"). На следующем экране отобразится 10x15cm (4x6”), не беспокойтесь - печать будет выполнена правильно.</string>
+
+  <!-- Print Plugin Manager -->
+  <string name="plugin_manager_title">Диспетчер услуг печати</string>
+  <string name="plugin_manager_sub_title">Для печати необходимо установить подключаемый модуль услуг печати и включить его.</string>
+
+  <string-array name="plugin_names">
+    <item>HP Print Service Plugin</item>
+    <item>Mopria Print Service</item>
+    <item>Brother Print Service Plugin</item>
+    <item>Samsung Print Service Plugin</item>
+    <item>Canon Print Service</item>
+    <item>Epson Print Enabler</item>
+    <item>Другой подключаемый модуль услуг печати</item>
+  </string-array>
+
+  <string-array name="plugin_makers">
+    <item>HP Inc.</item>
+    <item>Mopria Alliance</item>
+    <item>Brother Industries, Ltd.</item>
+    <item>Samsung Electronics Co., Ltd.</item>
+    <item>Canon Inc.</item>
+    <item>Seiko Epson Corporation</item>
+    <item>Н/д</item>
+  </string-array>
+
+  <string name="continue_to_print">ПРОДОЛЖИТЬ ПЕЧАТЬ</string>
+  <string name="skip">ПРОПУСТИТЬ</string>
+  <string name="before_enable_tips">Вы будете перенаправлены к настройкам печати Android.</string>
+  <string name="before_enable_tips_title">Включите подключаемый модуль</string>
+  <string name="ok">ПЕРЕЙТИ К НАСТРОЙКАМ</string>
+  <string name="cancel">ОТМЕНА </string>
+  <string name="enabled">Включено</string>
+  <string name="disabled">Отключено</string>
+
+  <!--Toast Strings-->
+  <string name="set_print_job_data">Сначала установите PrintJobData</string>
+</resources>
